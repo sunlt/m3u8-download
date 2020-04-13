@@ -1,3 +1,4 @@
+```
 npm install -g m3u8-download
 
 Usage: m3u8-download [options] [command]
@@ -13,3 +14,5 @@ Usage: m3u8-download [options] [command]
     -t, --thread <n>   (defaults to 16)
     -u, --url         m3u8 url
     -v, --version     Output the version number
+
+```
