@@ -1,13 +1,18 @@
 {
   "name": "@sunlt/m3u8-downloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/index.js",
-  "bin": "bin/m3u8-download",
+  "bin": "bin/m3u8-downloader",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sunlt",
+  "keywords": [
+    "hls",
+    "m3u8",
+    "download"
+  ],
   "license": "ISC",  
   "files": [
     "lib",
