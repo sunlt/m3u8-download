@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const download = require('../lib')
+const args = require('args')
+
+args
+  .option('url', 'm3u8 url')
+  .option('output', '.ts file') 
+  .option('proxy', 'http://ip:port', null)
+  .option('thread', '', 16)
+const cmdParams = args.parse(process.argv) 
+
+const main = async () => {
+  const url = cmdParams.url  
+  const output = cmdParams.output
+  
+  if(!url || !output){
+    return args.showHelp()
+  }
+  await download(cmdParams)
+  console.log(`${url} \n ${output} \n done`)
+};
+
+main().catch(e => console.error(e.stack))
