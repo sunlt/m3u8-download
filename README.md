@@ -1,7 +1,7 @@
 ```
-npm install -g m3u8-download
+npm install -g @sunlt/m3u8-downloader
 
-Usage: m3u8-download [options] [command]
+Usage: m3u8-downloader [options] [command]
 
   Commands:
     help     Display help
